@@ -1,0 +1,593 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Page</title>
+	
+	
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/app.css">	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="icon" type="image/ico" href="img/logo/logo.ico" sizes="16x16">
+	
+</head>
+
+<body>
+
+
+<nav class="navbar fixed-top navbar-expand-lg text-right" id="mainNavbar"> <a class="navbar-brand" href="index.html">
+	<img src="img/logo/logo.png" alt="24 market"> MARKET 24</a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon "></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav ">
+		<li class="nav-item dropdown text-r"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> User Name </a>
+        <div class="dropdown-menu text-right" aria-labelledby="navbarDropdown1"> 
+			<a class="dropdown-item" href="userDashboardEditUser.html">Edit my Profile</a> 
+			<a class="dropdown-item" href="userDashboardTableCart.html">Edit my cart</a> 
+			<a class="dropdown-item" href="userDashboardMessage.html">Messages</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="index.html">Log out</a> </div>
+      </li>
+      <li class="nav-item"> <a class="nav-link" href="index.html">Home page</a> </li>
+		<li class="nav-item"> <a class="nav-link" href="search.html">Search</a> </li>
+		<li class="nav-item"> <a class="nav-link d-block d-lg-none" href="#">About us</a> </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0 mr-auto d-none d-lg-block searchOpt1">
+      <input class="form-control mr-sm-2 size" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn my-2 my-sm-0 navSearchButton" type="submit">Search</button>
+    </form>
+	  <div clas="searchOpt1">
+	  <div class="collapse navbar-collapse">
+	  	<ul class="navbar-nav wrapper">
+	  		<li class="nav-item"><a class="nav-link wrappers text-center" href="logIn.html">Log in<span class="sr-only">(current)</span></a> </li>
+			<p class="vl my-2 ">|</p>
+			<li class="nav-item"><a class="nav-link wrappers text-center" href="signUp.html">Sign up<span class="sr-only">(current)</span></a> </li>
+	  	</ul>
+	  </div></div>
+  </div>
+</nav>
+	
+
+
+	<div class="bg-cover">
+	
+<h3 class="d-flex justify-content-center m-2"> Search Here!!!</h3>	
+<section class="searchSection text-right">
+    <div class="container">
+        <form action="#" method="post" novalidate="novalidate">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                            <input type="text" class="form-control searchPart" placeholder="Write Here...">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control searchPart" id="exampleFormControlSelect1">
+                                <option>Select Product Type</option>
+                                <option>computer hardwares</option>
+                                <option>CellPhones </option>
+                                <option>Books</option>
+                                <option>Sports</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <button type="button" class="btn col btnSearch rounded">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	<div class="types">
+        <div class="container-fluid px-0">
+          <div class="row no-gutters align-items-stretch justify-content-between">
+            <div class="col-6 col-sm-6 col-md col-lg h-100">
+              <a href="search.html" class="type">
+                <div class="iconW">
+                  <span class=""></span>
+                </div>
+                <h3>computer hardwares</h3>
+              </a>
+            </div>
+            <div class="col-6 col-sm-6 col-md col-lg h-100">
+              <a href="search.html" class="type">
+                <div class="iconW">
+                  <span class=""></span>
+                </div>
+                <h3>Cellphones</h3>
+              </a>
+            </div>
+            <div class="col-6 col-sm-6 col-md col-lg h-100">
+              <a href="search.html" class="type">
+                <div class="iconW">
+                  <span class=""></span>
+                </div>
+                <h3>Books</h3>
+              </a>
+            </div>
+            <div class="col-6 col-sm-6 col-md col-lg h-100">
+              <a href="search.html" class="type">
+                <div class="iconW">
+                  <span class=""></span>
+                </div>
+                <h3>Sports</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> 
+	
+	
+	
+	
+	
+	
+	
+	
+
+<div class="row searchPage m-auto flex-row-reverse">	
+
+	
+
+
+	<div class="container d-none d-md-block col-md-3 mr-4 mb-2 mt-4 border rounded  bC">
+
+		
+		
+		
+	<div  class="">
+    <div class="dropdown-header text-right"><a class="btn my-1 shadow-none" data-toggle="collapse" href="#collapseSearch" aria-expanded="false" aria-controls="collapseMenu">
+          <strong><b>
+    Sort by <i class="fas fa-caret-down"></i>
+                </b></strong>
+    </a></div>
+         <div class="collapse editMenu" id="collapseSearch">
+        <a class="dropdown-item text-right" href="search.html"><small>Name(A-Z)</small></a>
+        <a class="dropdown-item text-right" href="search.html"><small>Name(Z-A)</small></a>
+        <a class="dropdown-item text-right" href="search.html"><small>Price(Low-High)</small></a>
+        <a class="dropdown-item text-right" href="search.html"><small>Price(High-Low)</small></a>
+        <a class="dropdown-item text-right" href="search.html"><small>Top Rated</small></a>
+    </div>
+    <hr class="border-light"> 
+
+   <div class="dropdown-header text-right"><a class="btn my-1 shadow-none" data-toggle="collapse" href="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu">
+	   <strong><b>
+    Hardware Type <i class="fas fa-caret-down"></i>
+		   </b></strong>
+  </a></div>
+	<div class="collapse editMenu" id="collapseMenu">
+   <a class="dropdown-item text-right" href="search.html"><small>Type 1</small></a>
+   <a class="dropdown-item text-right" href="search.html"><small>Type 2</small></a>
+   <a class="dropdown-item text-right" href="search.html"><small>Type 3</small></a>
+   <a class="dropdown-item text-right" href="search.html"><small>Type 4</small></a>
+   <a class="dropdown-item text-right" href="search.html"><small>Type 5</small></a>
+   <a class="dropdown-item text-right" href="search.html"><small>Type 6</small></a>
+	</div>
+  
+	<div class="dropdown-header text-right"><a class="btn my-1 shadow-none" data-toggle="collapse" href="#collapseMenu2" aria-expanded="false" aria-controls="collapseMenu2">
+    <strong><b>
+    CellPhone Brands <i class="fas fa-caret-down"></i>
+		   </b></strong>
+  </a></div>
+	<div class="collapse editMenu" id="collapseMenu2">
+        <a class="dropdown-item text-right" href="search.html"><small>Brand 1</small></a>
+        <a class="dropdown-item text-right" href="search.html"><small>Brand 2</small></a>
+        <a class="dropdown-item text-right" href="search.html"><small>Brand 3</small></a>
+        <a class="dropdown-item text-right" href="search.html"><small>Brand 4</small></a>
+        <a class="dropdown-item text-right" href="search.html"><small>Brand 5</small></a>
+        <a class="dropdown-item text-right" href="search.html"><small>Brand 6</small></a>
+	</div>	
+		<hr class="border-light">
+		<div class="text-right-fixs my-1">
+		<a class="btn shadow-none"  href="search.html">
+    <strong><b>
+    Available Products
+		   </b></strong>
+  		</a></div>
+		<div class="text-right-fixs my-1">
+		<a class="btn shadow-none"  href="search.html">
+    <strong><b>
+    New Products
+		   </b></strong>
+  		</a></div>
+		<div class="text-right-fixs my-1">
+		<a class="btn shadow-none"  href="search.html">
+    <strong><b>
+    Discounts
+		   </b></strong>
+  		</a></div>
+		
+		
+		</div>
+		
+		
+		
+		
+	</div>	
+	
+	
+	
+	
+	
+	
+
+<div class="col-xs-10 col-md-8 col-xl-8 mb-2 mt-4 border rounded mxs customM">
+
+
+	
+	<div class="row justify-content-center">
+
+
+            <div  class="p-2" >
+
+                <div class="row mt-2">
+                            <div class="col-xs-12 col-md-3 px-3 my-1 container">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/1.jpg" alt="Product">
+                                    <h4>Product 1</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3 px-3 my-1 container">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/1.jpg" alt="Product">
+                                    <h4>Product 2</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3 px-3 my-1 container">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/2.jpg" alt="Product">
+                                    <h4>Product 3</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6 container">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3 px-3 my-1 container">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/2.jpg" alt="Product">
+                                    <h4>Product 4</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            </div>
+            
+
+        </div>
+	
+	<hr class="d-none d-md-block">
+	
+	<div class="row justify-content-center">
+
+
+            <div  class="p-2" >
+
+                <div class="row mt-2">
+                            <div class="col-xs-12 col-md-3 px-3 my-1 container">
+                                <div class="product-block">
+                                    <img class="d-block w-100  img-size2" src="img/Product/1.jpg" alt="Product">
+                                    <h4>Product 1</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3 px-3 my-1 container">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/2.jpg" alt="Product">
+                                    <h4>Product 2</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3 px-3 my-1 container">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/1.jpg" alt="Product">
+                                    <h4>Product 3</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3 px-3 my-1 container">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/2.jpg" alt="Product">
+                                    <h4>Product 4</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            </div>
+            
+
+        </div>
+	
+	
+		<hr>
+	
+	<div class="row justify-content-center">
+
+
+            <div  class="p-2" >
+
+                <div class="row mt-2">
+                            <div class="col-xs-12 col-md-3 px-3 my-1 containter">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/1.jpg" alt="Product">
+                                    <h4>Product 1</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3 px-3 my-1 containter">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/2.jpg" alt="Product">
+                                    <h4>Product 2</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3 px-3 my-1 containter">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/1.jpg" alt="Product">
+                                    <h4>Product 3</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3 px-3 my-1 containter">
+                                <div class="product-block">
+                                    <img class="d-block w-100 img-size2" src="img/Product/2.jpg" alt="Product">
+                                    <h4>Product 4</h4>
+                                    <small>Variant</small>
+                                    <p>$200</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-success customButSearch" href="userDashboardTableCart.html">Add To cart</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="btn btn-sm btn-danger customButSearch" href="product.html">More Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            </div>
+            
+
+        </div>
+
+	
+	
+	
+	
+	
+	<nav aria-label="Page navigation example">
+  <ul class="pagination pg-blue">
+    <li class="page-item">
+      <a class="page-link" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link">1</a></li>
+    <li class="page-item"><a class="page-link">2</a></li>
+    <li class="page-item"><a class="page-link">3</a></li>
+    <li class="page-item">
+      <a class="page-link" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>	
+	
+	
+	
+	
+    </div>		
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</div>
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+<footer class="footer-part">
+    <div class="container">
+        <a href="index.html" class="footer-logo btn shadow-none">
+            <img src="img/logo/logo.png" alt="MARKET 24">
+            <h3>MARKET 24</h3>
+        </a>
+        <div class="row footerDir">
+            <div class="col-4">
+                <div class="footer-fix">
+                    <h2>Sitemap</h2>
+                    <ul class="footerDir">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a href="userDashboard.html">User Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4 ">
+                <div class="footer-fix">
+                    <h2>Our Products</h2>
+                    <ul class="footerDir">
+                        <li><a href="search.html">Computer Hardwares</a></li>
+                        <li><a href="search.html">Cellphones</a></li>
+                        <li><a href="search.html">Books</a></li>
+                        <li><a href="search.html">Sports</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="footer-fix">
+                    <h2>About us</h2>
+                    <ul class="footerDir">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">Help us</a></li>
+                        <li><a href="#">Awards</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem por incididunt ut labore et dolore mag na aliqua.  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Ut gravida mattis magna, non varius lorem sodales nec. In libero orci, ornare non nisl.</p>
+        <div class="copy-right">
+Copyright ©2020 All rights reserved | This template is made by <a href="#"> MARKET 24 </a>
+</div>
+    </div>
+</footer>
+	
+	
+	
+
+	
+
+
+	
+	
+	
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.3.1.js"></script>
+</body>
+</html>
