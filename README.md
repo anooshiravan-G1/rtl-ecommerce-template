@@ -1,6 +1,6 @@
 # rtl-ecommerce-template
 
-Market 24 is an e-commerce template built with bootstrap 4.
+Market 24 is an rtl "Right to Left" e-commerce template built with bootstrap 4.
 
 ## Image
 ![Index Page](https://repository-images.githubusercontent.com/293159368/19f90e80-eff5-11ea-9a01-3a26e55c0379)
